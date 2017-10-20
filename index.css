@@ -1,0 +1,67 @@
+.container {
+    margin: 200px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #6ce9fe;
+    position: relative;
+    overflow: hidden
+}
+
+.wrapper {
+    width: 190px;
+    margin: 5px;
+    height: 190px;
+    background: #6ce9fe;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate 3.5s linear infinite;
+    -webkit-animation: rotate 3.5s linear infinite;
+}
+
+.circle1 {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 39%;
+    background: #9ceffe;
+    top: -226px;
+    left: -75px;
+}
+
+.circle2 {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 36%;
+    background: white;
+    top: -236px;
+    left: -75px;
+    transform: rotate(45deg);
+}
